@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="jp">
+      <body className={inter.className}>
+        {/* <header className="static"> */}
+        <button className="absolute size-[120px] rounded-full border-2 border-black z-50 -top-7 -right-7 grid place-items-center">
+          <div className="space-y-2 mt-3">
+            <Image
+              src="/hamburger-menu.svg"
+              height={24}
+              width={44}
+              alt="hamburger-menu"
+            />
+            <p className="text-sm">MENU</p>
+          </div>
+        </button>
+        {/* </header> */}
+        {children}
+      </body>
     </html>
   );
 }

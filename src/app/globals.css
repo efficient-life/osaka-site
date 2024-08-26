@@ -31,3 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  .main-bg {
+    opacity: 0.8991;
+    background: linear-gradient(
+      0deg,
+      #00e2ff 100%,
+      #4ef7d0 81.91%,
+      #2afbdb 61.58%,
+      #19dafd 32.02%,
+      #07ffb3 0%
+    );
+  }
+  .jp-vertical {
+    font-size: 36px;
+    line-height: 40px;
+    writing-mode: vertical-rl;
+  }
+}
