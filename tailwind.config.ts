@@ -13,6 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        Shippori: "Shippori Antique",
+      },
+      colors: {
+        green: "#4EF7D0;",
+        blue: "#19DAFD;",
+      }
     },
   },
   plugins: [],

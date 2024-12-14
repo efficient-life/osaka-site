@@ -18,19 +18,37 @@ export default function RootLayout({
   return (
     <html lang="jp">
       <body className={inter.className}>
-        {/* <header className="static"> */}
-        <button className="absolute size-[120px] rounded-full border-2 border-black z-50 -top-7 -right-7 grid place-items-center">
-          <div className="space-y-2 mt-3">
+        <header className="static">
+          <button className="fixed top-0 right-0 grid place-items-center z-50">
             <Image
-              src="/hamburger-menu.svg"
-              height={24}
-              width={44}
-              alt="hamburger-menu"
+              src="/top/hamburger.svg"
+              height={99}
+              width={100}
+              alt="ハンバーガーボタン"
             />
-            <p className="text-sm">MENU</p>
-          </div>
-        </button>
-        {/* </header> */}
+          </button>
+          <button className="fixed right-[36px] bottom-[40px] z-50">
+            <Image
+              src={"/top/follow-us.svg"}
+              height={90}
+              width={90}
+              // height={67.5}
+              // width={67.5}
+              alt="polka-dot3"
+            />
+          </button>
+          {/* <button className="absolute size-[120px] rounded-full border-2 border-black z-50 -top-7 -right-7 grid place-items-center">
+            <div className="space-y-2 mt-3">
+              <Image
+                src="/hamburger-menu.svg"
+                height={24}
+                width={44}
+                alt="hamburger-menu"
+              />
+              <p className="text-sm text-black">MENU</p>
+            </div>
+          </button> */}
+        </header>
         {children}
       </body>
     </html>
